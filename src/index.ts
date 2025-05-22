@@ -41,8 +41,11 @@ app.get("/", async (req, res) => {
   res.send(
     `
   <h1>Hello world!</h1>
-  <h2>Tudo bem, cambadinha ?</h2>
-  <p>sejam muito bem vindos ao meu cantinho</p>
+  <h2>Available Routes</h2>
+  <pre>
+    GET, POST /todos
+    GET, PUT, DELETE /todos/:id
+  </pre>
   `.trim()
   );
 });
