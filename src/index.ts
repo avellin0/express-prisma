@@ -43,7 +43,7 @@ app.get("/", async (req, res) => {
   <h1>Hello world!</h1>
   <h2>Tranquilidade seus peida jontex?</h2>
   <p>Sejam muito bem vindos ao meu canto</p>
-  <img src="C:/Users/plogl/Dev/Practice_projects/deploy/expressjs-prisma/assets/foto.jpg">
+  <img src="../assets/foto.jpg" alt="fotinha">
   `.trim()
   );
 });
