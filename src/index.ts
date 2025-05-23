@@ -1,7 +1,7 @@
 // import { PrismaClient } from "@prisma/client";
 import express from "express";
 import route from "./router/routes";
-
+import path from "path";
 // const prisma = new PrismaClient();
 
 const app = express();
@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.raw({ type: "application/vnd.custom-type" }));
 app.use(express.text({ type: "text/html" }));
 app.use(express.static("assets"));
-app.use(express.static("public"));
+app.use(express.static((path.join(__dirname, "..", "public"))))
 app.use(route)
 
 
