@@ -9,6 +9,6 @@ app.use(express.static("assets"));
 app.use(route)
 
 
-app.listen(3000, () => {
+app.listen(Number(port), "0.0.0.0", () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
