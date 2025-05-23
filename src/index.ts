@@ -44,7 +44,7 @@ app.get("/", async (req, res) => {
   <h1>Hello world!</h1>
   <h2>Tranquilidade seus peida jontex?</h2>
   <p>Sejam muito bem vindos ao meu canto</p>
-  <img src="/foto.jpg" alt="fotinha">
+  <img src="/fotinha.jpg" alt="fotinha">
   `.trim()
   );
 });
