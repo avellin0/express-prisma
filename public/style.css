@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+
+body{
+    width: 134.2rem;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* overflow-x: hidden; */
+}
+
+
+header{
+    width: 100%;
+    height: 7.5vh;
+    background-color: aquamarine;
+    padding: 5px;
+}
+
+#header_scope{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#header_find_scope{
+    width: 20%;
+    height: 100%;
+    margin-left: 2.5rem;
+}
+
+#header_find_input{
+    width: 100%;
+    height: 100%;
+    font-size: 10pt;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-indent: 1rem;
+}
+
+#header_find_scope,
+#header_find_input{
+    background-color: azure;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#header_link_scope{
+    width: 40%;
+    height: 100%;
+    padding: 1rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15pt;
+    font-family: sans-serif;
+}
+
+#header_link_scope a{
+    color: black;
+    text-decoration: none;
+}
+
+#header_link_scope a:hover{
+    color: rgb(41, 41, 41);
+    text-decoration: underline;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+}
+
+#main_info_scope{
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+    align-items: center;
+    background-color: ghostwhite;
+    font-size: 42pt;
+}
+
+#main_quote_scope{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main_phrase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 65%;
+    border-radius: .5rem;
+    background-color: ghostwhite;
+    font-size: 40pt;
+    font-style: italic;
+}
+
+#paparazzi_img{
+    width: 40%;
+    border-radius: .5rem;
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.footer_news{
+    width: 30%;
+    height: 100%;
+    font-size: 25pt;
+}
+
+.footer_news p{
+    color: gray;
+    font-size: 12pt;
+}
+
+#reborn:hover,
+#selic:hover,
+#trump:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
