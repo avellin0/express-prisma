@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(express.raw({ type: "application/vnd.custom-type" }));
 app.use(express.text({ type: "text/html" }));
 app.use(express.static("assets"));
+app.use(express.static("public"));
 app.use(route)
 
 
