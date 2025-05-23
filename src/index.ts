@@ -9,6 +9,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.raw({ type: "application/vnd.custom-type" }));
 app.use(express.text({ type: "text/html" }));
+app.use(express.static("assets"));
 
 app.get("/artists", async (req, res) => {
   const todos = await prisma.artist.findMany();
@@ -43,7 +44,7 @@ app.get("/", async (req, res) => {
   <h1>Hello world!</h1>
   <h2>Tranquilidade seus peida jontex?</h2>
   <p>Sejam muito bem vindos ao meu canto</p>
-  <img src="../assets/foto.jpg" alt="fotinha">
+  <img src="/foto.jpg" alt="fotinha">
   `.trim()
   );
 });
