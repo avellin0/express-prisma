@@ -53,3 +53,47 @@ body{
 span{
     color: rgb(197, 4, 4);
 }
+
+@media screen and (max-width: 780px) {
+    #news_scope{
+    width: 60%;
+    height: 90%;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#news_image{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 45%;
+    padding: 10px;
+}
+
+#news_img{
+    width: 100%;
+    height: 100%;
+}
+
+#news_info{
+    color: white;
+    width: 95%;
+    height: 50%;
+}
+
+#news_recompensa{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    font-size: 15pt;
+}
+
+}
